@@ -1,0 +1,27 @@
+﻿<Window x:Class="СurrencyConverter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:СurrencyConverter"
+        mc:Ignorable="d"
+        Title="Currency Converter" Height="300" Width="400" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="141*"/>
+            <ColumnDefinition Width="253*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush Opacity="0.4" ImageSource="D:\university\III course\Декларативне програмування\СurrencyConverter\СurrencyConverter\Resources\background.png"></ImageBrush>
+        </Grid.Background>
+        <ComboBox x:Name="to" HorizontalAlignment="Left" Margin="75.333,125,0,0" VerticalAlignment="Top" Width="115" SelectedIndex="1" Grid.Column="1"/>
+        <ComboBox x:Name="from" HorizontalAlignment="Left" Margin="75.333,73,0,0" VerticalAlignment="Top" Width="115" SelectedIndex="0" Grid.Column="1"/>
+        <TextBox x:Name="amount_text_box" HorizontalAlignment="Left" Height="23" Margin="75.333,23,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="115" FontSize="16" Grid.Column="1"/>
+        <Label Content="Amount" HorizontalAlignment="Left" Margin="35,19,0,0" VerticalAlignment="Top" Height="30" Width="71" FontSize="16" FontWeight="Bold"/>
+        <Label Content="From" HorizontalAlignment="Left" Margin="35,68,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <Label Content="To" HorizontalAlignment="Left" Margin="35,120,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="converted_amount" Content="Converted amount:" HorizontalAlignment="Left" Margin="37,224,0,0" VerticalAlignment="Top" Height="30" Width="272" FontSize="16" FontWeight="Bold" Grid.ColumnSpan="2"/>
+        <Button Content="Convert" HorizontalAlignment="Center" VerticalAlignment="Center" Width="114" Click="Button_Click" FontSize="18" Height="34" Grid.ColumnSpan="2" Margin="136,172,145,65" BorderThickness="2"/>
+    </Grid>
+
+</Window>
